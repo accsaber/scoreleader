@@ -5,6 +5,7 @@
     "moduleResolution": "nodeNext",
     "target": "esnext",
     "types": ["bun-types"],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   }
 }

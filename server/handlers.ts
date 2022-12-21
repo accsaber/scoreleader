@@ -1,3 +1,5 @@
+import playersHandler, { playersRegexp } from "./handlers/GET/players";
+
 export type Handler = (
 	request: Request,
 	params?: RegExpExecArray,
@@ -17,3 +19,5 @@ export type Method =
 const handlers = new Map<{ path: RegExp; methods?: Method[] }, Handler>();
 
 export default handlers;
+
+handlers.set({ path: playersRegexp, methods: ["GET"] }, playersHandler);
