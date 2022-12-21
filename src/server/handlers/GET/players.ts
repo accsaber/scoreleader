@@ -3,7 +3,6 @@ import { type Handler } from "../../handlers";
 import jsonResponse from "../../../util/jsonr";
 import json from "../../../util/jsonf";
 import { components as BeatLeader } from "../../../types/beatleader";
-import { components as ScoreSaber } from "../../../types/scoresaber";
 import playerConverter from "../../../util/playerConverter";
 
 export const playersRegexp = pathToRegexp("/api/players");

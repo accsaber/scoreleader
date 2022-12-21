@@ -16,6 +16,7 @@ export default function playerConverter(
 		countryRank: player.countryRank,
 		role: null,
 		badges: null,
+		histories: "",
 		permissions: 0,
 		banned: false,
 		inactive: false,
