@@ -1,7 +1,9 @@
-import { pathToRegexp } from "https://esm.sh/path-to-regexp";
-import { type Handler } from "../../handlers.ts";
+import { pathToRegexp } from "path-to-regexp";
+import { type Handler } from "../../handlers";
 export const LeaderboardHandlerRegexp = pathToRegexp("");
 
-const LeaderboardHandler: Handler = (req: Request) => {};
+const LeaderboardHandler: Handler = (req: Request) => {
+	return new Response("i");
+};
 
 export default LeaderboardHandler;

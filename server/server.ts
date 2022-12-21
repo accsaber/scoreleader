@@ -1,6 +1,8 @@
-import { Handler } from "./handlers.ts";
-import ssapi from "../scoresaber-public-api-1.0.0.json" assert { type: "json" };
-import ErrorResponse from "../util/error.ts";
+import { Handler } from "./handlers";
+import * as ssapi from "../scoresaber-public-api-1.0.0.json" assert {
+	type: "json",
+};
+import ErrorResponse from "../util/error";
 
 const escapeRegex = (string: string) =>
 	string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

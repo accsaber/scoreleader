@@ -2,7 +2,9 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "module": "esnext",
+    "moduleResolution": "nodeNext",
     "target": "esnext",
-    "types": ["bun-types"] // this is necessary
+    "types": ["bun-types"],
+    "resolveJsonModule": true
   }
 }
